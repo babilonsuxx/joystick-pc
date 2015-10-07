@@ -32,13 +32,21 @@ labelIp.Text = ip.ToString();
 
             if (btnStart.Text == "START")
             {
+                //меняем кнопку и цвет
                 btnStart.Text = "STOP";
                 btnStart.ForeColor = System.Drawing.Color.Red;
+                //номер порта
+                int portNum = Convert.ToInt32(textBox1.text);
+                // открываем сокет
+
+
             }
             else
             {
+                //меняем кнопку и цвет
                 btnStart.Text = "START";
                 btnStart.ForeColor = System.Drawing.Color.Green;
+                //останавливаем 
             }
             
         }
