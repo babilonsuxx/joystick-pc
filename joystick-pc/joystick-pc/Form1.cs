@@ -25,16 +25,22 @@ System.Net.IPAddress ip = System.Net.Dns.GetHostByName(host).AddressList[0];
 labelIp.Text = ip.ToString();
         }
 
-        private void btnStop_Click(object sender, EventArgs e)
-        {
-            btnStop.Enabled = false;
-            btnStart.Enabled = true;
-        }
+       
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-            btnStop.Enabled = true;
-            btnStart.Enabled = false;
+
+            if (btnStart.Text == "START")
+            {
+                btnStart.Text = "STOP";
+                btnStart.ForeColor = System.Drawing.Color.Red;
+            }
+            else
+            {
+                btnStart.Text = "START";
+                btnStart.ForeColor = System.Drawing.Color.Green;
+            }
+            
         }
         // вводим только числа
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
@@ -45,5 +51,17 @@ labelIp.Text = ip.ToString();
                 }
         
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+       
     }
 }
