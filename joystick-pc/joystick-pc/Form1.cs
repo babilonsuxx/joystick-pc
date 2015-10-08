@@ -14,7 +14,7 @@ namespace joystick_pc
 {
     public partial class Form1 : Form
     {
-       
+        int n;
         
         public Form1()
         {
@@ -37,6 +37,7 @@ namespace joystick_pc
             if (btnStart.Text == "START")
             {
                 //меняем кнопку и цвет
+                n = 1;
                 btnStart.Text = "STOP";
                 btnStart.ForeColor = System.Drawing.Color.Red;
                 //номер порта
@@ -45,10 +46,27 @@ namespace joystick_pc
                 String host = System.Net.Dns.GetHostName();
                 IPAddress ipAddr = System.Net.Dns.GetHostByName(host).AddressList[0];
                 IPEndPoint ipEndPoint = new IPEndPoint(ipAddr, portNum);
+              
+
+                // Создаем сокет Tcp/Ip
                 Socket sListener = new Socket(ipAddr.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
+                
+                //начинаем работать с ним
+                try 
+                {
+                    sListener.Bind(ipEndPoint);
+                    sListener.Listen(2);
+                    labelInput.Text = "ждем соединения";
+                    // Начинаем слушать соединения
+                    
+                
+                }
+                catch (Exception ex)
+                {
+                    labelInput.Text = ex.ToString();
+                }
 
-
-
+               
             }
             else
             {
@@ -56,6 +74,8 @@ namespace joystick_pc
                 btnStart.Text = "START";
                 btnStart.ForeColor = System.Drawing.Color.Green;
                 //останавливаем 
+                n = 0;
+               
 
 
             }
