@@ -33,6 +33,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnStart = new System.Windows.Forms.Button();
             this.labelIp = new System.Windows.Forms.Label();
+            this.labelInput = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -85,11 +86,21 @@
             this.labelIp.TabIndex = 5;
             this.labelIp.Text = "ip";
             // 
+            // labelInput
+            // 
+            this.labelInput.AutoSize = true;
+            this.labelInput.Location = new System.Drawing.Point(12, 76);
+            this.labelInput.Name = "labelInput";
+            this.labelInput.Size = new System.Drawing.Size(78, 13);
+            this.labelInput.TabIndex = 6;
+            this.labelInput.Text = "то что пришло";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(214, 240);
+            this.Controls.Add(this.labelInput);
             this.Controls.Add(this.labelIp);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.label2);
@@ -110,6 +121,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Label labelIp;
+        private System.Windows.Forms.Label labelInput;
     }
 }
 

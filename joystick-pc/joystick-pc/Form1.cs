@@ -47,6 +47,8 @@ namespace joystick_pc
                 IPEndPoint ipEndPoint = new IPEndPoint(ipAddr, portNum);
                 Socket sListener = new Socket(ipAddr.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
 
+
+
             }
             else
             {
