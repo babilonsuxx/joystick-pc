@@ -1,0 +1,38 @@
+﻿<Page
+    x:Class="joystick_phone.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:joystick_phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="#FF2B7E7E">
+        <StackPanel Orientation="Vertical">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Hostname:" FontSize="16" Height="20"  Margin="15,0,0,0" />
+                <TextBox x:Name="ServerHostname" Text="192.168.1.4" FontSize="16" Height="20" Margin="15,0,0,0" VerticalAlignment="Center" />
+                <TextBlock Text="Port:" FontSize="16" Height="20"  Margin="15,0,0,0" />
+                <TextBox x:Name="ServerPort" Text="3333" FontSize="16" Height="20" Margin="15,0,0,0" VerticalAlignment="Center" />
+                <Button Content="Connect" Click="Connect_Click" Margin="5,0,0,0" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Text to send:" FontSize="16" Height="20"  Margin="15,0,0,0" />
+                <TextBox x:Name="SendText" Text="hello" FontSize="16" Height="20" Margin="15,0,0,0" VerticalAlignment="Center" />
+                <Button Content="Send"  Margin="10,0,0,0" Click="Button_Click" />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Status:" FontSize="16" Height="20" Margin="15,0,0,0" />
+                <TextBox x:Name="StatusText" Text="Idle" FontSize="16" Height="Auto" TextWrapping="Wrap" Margin="15,0,0,0" VerticalAlignment="Center" Width="373" />
+            </StackPanel>
+            <Grid 
+                Grid.Column="1" Margin="15,0,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <TextBlock x:Name="OutputView" FontSize="16" Height="Auto" Margin="15,0,0,0" TextWrapping="Wrap" />
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Page>

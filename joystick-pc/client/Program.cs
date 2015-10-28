@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace joystick_pc
+namespace client
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace joystick_pc
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ServerForm());
+            Application.Run(new ClientForm());
         }
     }
 }

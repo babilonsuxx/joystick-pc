@@ -1,20 +1,58 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "joystick-pc", "joystick-pc\joystick-pc.csproj", "{A103487F-D551-4D4F-80ED-0BAD9BE50CF0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "joystick-pc", "joystick-pc\joystick-pc.csproj", "{91802E70-5226-44DC-BE7E-EB35C77032C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "client", "client\client.csproj", "{51B7F543-5472-4C76-8F01-39C4C639CF51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JoyPhone", "JoyPhone\JoyPhone.csproj", "{63BAE360-87F9-450A-AA9D-D5D94DD1CE69}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A103487F-D551-4D4F-80ED-0BAD9BE50CF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A103487F-D551-4D4F-80ED-0BAD9BE50CF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A103487F-D551-4D4F-80ED-0BAD9BE50CF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A103487F-D551-4D4F-80ED-0BAD9BE50CF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91802E70-5226-44DC-BE7E-EB35C77032C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91802E70-5226-44DC-BE7E-EB35C77032C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91802E70-5226-44DC-BE7E-EB35C77032C5}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{91802E70-5226-44DC-BE7E-EB35C77032C5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{91802E70-5226-44DC-BE7E-EB35C77032C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91802E70-5226-44DC-BE7E-EB35C77032C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91802E70-5226-44DC-BE7E-EB35C77032C5}.Release|ARM.ActiveCfg = Release|Any CPU
+		{91802E70-5226-44DC-BE7E-EB35C77032C5}.Release|x86.ActiveCfg = Release|Any CPU
+		{51B7F543-5472-4C76-8F01-39C4C639CF51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51B7F543-5472-4C76-8F01-39C4C639CF51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51B7F543-5472-4C76-8F01-39C4C639CF51}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{51B7F543-5472-4C76-8F01-39C4C639CF51}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{51B7F543-5472-4C76-8F01-39C4C639CF51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51B7F543-5472-4C76-8F01-39C4C639CF51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51B7F543-5472-4C76-8F01-39C4C639CF51}.Release|ARM.ActiveCfg = Release|Any CPU
+		{51B7F543-5472-4C76-8F01-39C4C639CF51}.Release|x86.ActiveCfg = Release|Any CPU
+		{63BAE360-87F9-450A-AA9D-D5D94DD1CE69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63BAE360-87F9-450A-AA9D-D5D94DD1CE69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63BAE360-87F9-450A-AA9D-D5D94DD1CE69}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{63BAE360-87F9-450A-AA9D-D5D94DD1CE69}.Debug|ARM.ActiveCfg = Debug|ARM
+		{63BAE360-87F9-450A-AA9D-D5D94DD1CE69}.Debug|ARM.Build.0 = Debug|ARM
+		{63BAE360-87F9-450A-AA9D-D5D94DD1CE69}.Debug|ARM.Deploy.0 = Debug|ARM
+		{63BAE360-87F9-450A-AA9D-D5D94DD1CE69}.Debug|x86.ActiveCfg = Debug|x86
+		{63BAE360-87F9-450A-AA9D-D5D94DD1CE69}.Debug|x86.Build.0 = Debug|x86
+		{63BAE360-87F9-450A-AA9D-D5D94DD1CE69}.Debug|x86.Deploy.0 = Debug|x86
+		{63BAE360-87F9-450A-AA9D-D5D94DD1CE69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63BAE360-87F9-450A-AA9D-D5D94DD1CE69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63BAE360-87F9-450A-AA9D-D5D94DD1CE69}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{63BAE360-87F9-450A-AA9D-D5D94DD1CE69}.Release|ARM.ActiveCfg = Release|ARM
+		{63BAE360-87F9-450A-AA9D-D5D94DD1CE69}.Release|ARM.Build.0 = Release|ARM
+		{63BAE360-87F9-450A-AA9D-D5D94DD1CE69}.Release|ARM.Deploy.0 = Release|ARM
+		{63BAE360-87F9-450A-AA9D-D5D94DD1CE69}.Release|x86.ActiveCfg = Release|x86
+		{63BAE360-87F9-450A-AA9D-D5D94DD1CE69}.Release|x86.Build.0 = Release|x86
+		{63BAE360-87F9-450A-AA9D-D5D94DD1CE69}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
